@@ -1,0 +1,32 @@
+*,body,div,span,img,input { margin:0px; padding:0px;}
+body { background:url(../images/pattern.png) repeat;	 font-family:Verdana; font-size:12px; text-align:center; }
+
+.box { 	width:320px;	height:220px;	border-radius:20px; }
+
+.blue {
+	float:left;
+	margin:120px 0 0 220px;
+	background: #33CCFF;
+	border:2px solid #0099CC;
+}
+
+.green {
+	float:right;
+	margin:120px 220px 0 0;
+	background: #99FF99;
+	border:2px solid #0099CC;
+}
+
+img {
+	width: 150px;	height: 150px;
+	margin:20px 0 0 80px;
+	cursor:pointer;
+}
+
+h3 {
+	margin:10px 0 0 40px;
+	font-size:1.4em;
+}
+
+a, a:visited, a:link { text-decoration:none; outline:none; }
+

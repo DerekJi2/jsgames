@@ -1,0 +1,159 @@
+ html body { width:100%;
+	background-color:#a0d0ff;
+	text-align:center}
+
+ .mainFrame {
+ 	position: relative;
+	background-color:#a0d0ff;
+	border:1px dashed #a000ff;
+	width:570px;
+	height:582px;
+	margin:0 auto;
+ }
+
+ .leftfrm {
+	position: absolute;
+	top:2px; left: 2px;
+	border:2px solid #a000ff;
+	margin:10px;
+	width:50%;
+	height:560px;
+	background:url(../images/bg11.jpg) no-repeat;
+	text-align:left;
+ }
+ 
+ #grid { 
+ 	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../images/tetris_grid.gif) repeat;
+ }
+
+ .rightfrm {
+	position: absolute;
+	top:2px; left:302px;
+	float:right;
+	border:none;
+	margin:10px;
+	width:40%;
+	height:540px;
+	text-align:left;
+ }
+
+ .plaintxt {
+	background-color:#a0d0ff;
+	border:0px;
+	text-align:left;
+	font-family:Verdana;
+	font-size:12px;
+	color:#ffffff;
+ }
+
+ .label {
+	background-color:#a0d0ff;
+	border:0px;
+	width:2em;
+	font-family:Verdana;
+	font-size:16px;
+	color:#a000ff;
+ }
+
+ .frmButton {
+	border:none;
+	margin:0px;
+	padding:0px;
+	width:50px;
+	height:20px;
+	font-family:Verdana;
+	font-size:12px;
+	background:url(../images/tabBtn.gif) no-repeat;
+ }
+
+ #nextBlock {
+	border:2px solid #a000ff;
+	width:132px;
+	height:132px;
+	background-color:#a0c0ff;
+	
+ }
+
+ #stage { 
+	position:absolute;
+	width:100%;
+	height:100%;
+ }
+ 
+
+ #grid {
+	z-index: 10;
+	}
+
+ #stage {
+	z-index: 55;
+	}
+	
+ #bgSelect {
+ 	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+ }
+
+ .tab-box { margin-top:20px; font-size:12px; font-family:Verdana;	}
+
+ .tab-menu { margin:10px; padding:5px; border-radius:8px 8px 0 0;  }
+	
+ .tab-content { float:left; width:240px; height:250px; margin-top:4px; padding:5px; border-radius:8px 8px 0 0; background: #77BBFF;  }
+ 
+ .show { display:block; }
+ .hide { display:none;  }
+
+ .selected { background: #77BBFF; }
+ .unselected { background:#A3CFFD;  }
+
+ a, a:hover, a:link, a:visited { text-decoration:none; color:#000; }
+
+#cfgView select { font-family:Verdana; }
+
+ #imgBlockIcon { background:url(images/tetris.gif) center; margin-left:15px; }
+ 
+   	#nextBlock div {
+		margin:0px;		padding:0px;
+		width:28px;		height:28px;
+		position:absolute;
+		float:left;
+		background:url(../images/tetris.gif) no-repeat;
+	}
+
+	#grid div {
+		margin:0px;		padding:0px;
+		width:28px;		height:28px;
+		position:absolute;
+		background:url(../images/tetris.gif) no-repeat;
+	}
+
+	#stage div {
+		position:absolute;
+		width:28px;		height:28px;
+		background:url(../images/tetris.gif) no-repeat;
+	}
+
+	div#gameover { 
+		position:absolute; 
+		z-index: 99; 
+	}
+
+	table {
+		position: absolute;
+		width:100%; height:100%;
+		font-size: 12px;
+		border: 1px solid #6699cc;
+	}
+
+	div#imgBlockIcon {
+		position: absolute;
+		top: 450px; left: 5px;
+		width:196px; height:28px;
+		background: url(../images/tetris.gif) no-repeat;
+		background-position:0px 0px;
+		z-index:10;
+	}
+	

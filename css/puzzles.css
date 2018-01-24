@@ -1,0 +1,102 @@
+	body {
+		text-align: center;
+		background: #a0c0ff;
+	}
+
+
+	#mainBox {
+		position: relative;
+		width:684px;
+		height:586px;
+		margin:0 auto;
+	}
+
+	#debugFrm {
+		position: relative;
+		top: 2px; left:52px;
+		border:1px solid #f000ff;
+		width:784px;
+		height:586px;
+		text-align: left;
+		font-family:Verdana;
+		font-size:12px;
+	}
+
+	#boxFrame {
+		position: absolute;
+		top:2px;	left:2px;
+		background-color: #6699ff;
+		border:none;
+		width:790px;
+		height:492px;
+	}
+
+	#boxBody {
+		position: absolute;
+		top:4px;	left:4px;
+		background-color: #a0c0ff;
+		border:none;
+		width:786px;
+		height:488px;
+	}
+
+	#stageFrm {
+		position: absolute;
+		top:2px;	left:2px;
+		background-color: #6699ff;
+		border:none;
+		width:644px;
+		height:484px;
+	}
+
+	#stageBody {
+		position: absolute;
+		top:4px;	left:4px;
+		background-color: #a0c0ff;
+		border:none;
+		width:640px;
+		height:480px;
+	}
+
+	div#stageBody div {
+		position: absolute;
+		background: url(../img/xiyangyang06.jpg) no-repeat; 
+		width:128px;
+		height:120px;
+		z-index: 10;
+	}
+ 
+	#rightside {  
+		position: absolute;
+		top:20px;	left: 660px;
+		background: #a0c0ff;  
+		font-family:Verdana;
+		font-size:12px;
+		text-align:left;
+		z-index: 1;  
+	}  
+
+	#prev {
+		position: absolute;
+		border:0;    
+		margin:0;    
+		padding:0;    
+		top: 380px;
+		left: 5px;
+		max-width:96px;    
+		width:96px;    
+		max-height:72px;    
+		height:72px;    
+	}
+
+#showPrev {
+	position: absolute;
+	top: 350px;
+	left: 5px;
+}
+
+#labelPrev {
+	position: absolute;   
+	top: 355px;
+	left: 25px;
+}

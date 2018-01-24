@@ -1,0 +1,32 @@
+	/* for DEBUG CSS -- start */
+	#debugfrm {
+		border:none;
+		margin:10px;
+		width:40%;
+		height:540px;
+		text-align:left;
+	}
+
+    #debugfrm.hide {display:none;}
+
+	#debugfrm.show {display:block;}
+
+	#info {
+		float:left;
+		width:560px;
+		height:300px;
+		background-color:#a0f0ff;
+		font-family:Verdana;
+		font-size:12px;
+		border:1px dashed #00cc00;
+	}
+
+	#txt {
+		width:560px;
+		height:300px;
+		background-color:#a0f0ff;
+		font-family:Verdana;
+		font-size:12px;
+		border:1px dashed #00cc00;
+	}
+	/* for DEBUG CSS -- end */

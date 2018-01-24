@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tetris | Play Free Game</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Play Free Online Games. Puzzles, Tetris. All games for free. No Download. Just play now.">
+  <meta name="keywords" content="Free Online Games, Free Games Online, Free Games to Play, Play Games, Free Games, Puzzles, Tetris, Play Games for Free">
+  <meta name="robots" content="noindex,nofollow">
+  
+  <link type="text/css" rel="stylesheet" href="css/tetris-css2.css" />
+  <link type="text/css" rel="stylesheet" href="css/tetris-debug.css" />
+
+  <script type="text/javascript" src="javascript/tetris.js"></script>
+  <script type="text/javascript" src="javascript/tetris-notouch.js"></script>
+
+  <script type="text/javascript" src="javascript/tetris-classblock.js"></script>
+  <script type="text/javascript" src="javascript/tetris-classshape.js"></script>
+  <script type="text/javascript" src="javascript/tetris-classviewnext.js"></script>
+  <script type="text/javascript" src="javascript/tetris-classgame.js"></script>
+
+  <script type="text/javascript" src="javascript/tetris-debug.js"></script>
+  <!-- script type="text/javascript" src="javascript/tetris-nouse.js"></script -->
+
+</head>
+
+<body   style="overflow-x:hidden;overflow-y:auto">
+  <div class="mainFrame">
+	<div id="leftfrm" class="leftfrm">
+		<div id="grid">
+		</div>
+
+		<div id="stage"></div>
+
+		<div id="gameover"></div>
+	</div>
+
+	<div class="rightfrm">
+		<!-- 1st element: Show the type of next block -->
+		<div id="nextBlock">	</div>
+		<!-- 2nd element: Show the current parameters -->
+		<p class="plaintxt">
+		  Level:  <span id="speed" class="label">1</span>&nbsp;&nbsp;&nbsp;
+		  Scores: <span id="score" class="label">0</span>
+		</p>
+		<!-- 3rd element: Button to control start/pause/end -->
+		<button id="startBtn" class="frmButton" onclick="clickCtlButton();">Start</button>
+		<!--  Test Button
+		<button id="testBtn" class="frmButton" onclick="test();">Test</button>
+		<button id="stopBtn" class="frmButton" onclick="clickStopButton();">Stop</button>
+		-->
+
+		<!-- 4th element: tabFrame to control parameters/details -->
+		<div class='tab-box'>
+			<div id="tab-nav" class="tab-nav">
+				<span class="tab-menu   selected" id="tm1"><a href="#" onclick="changeTab(1)" onFocus="this.blur()">Setup</a></span>
+				<span class="tab-menu unselected" id="tm2"><a href="#" onclick="changeTab(2)" onFocus="this.blur()">About</a></span>
+			</div>
+
+			<div class="tab-content  show" id="tc1"><br />
+				<p id="cfgView"></p>
+					Background   <select id="bgSelect"></select> <br /> <br />
+					Block Type   &nbsp;&nbsp;<select id="iconSelect"></select> <br /> <br />
+					Speed Level  <select id="speedSelect"></select>
+					<div id="imgBlockIcon"></div>
+				
+			</div>
+			<div class="tab-content  hide" id="tc2">
+				<p id="aboutView">
+					<br/>
+					<span><B><br/><br/>
+					Just for FUN!!!<br/><br/>
+					Enjoy Yourself!<br/><br/>
+					<br/><br/><br/>
+					</B></span>
+				</p>
+			</div>
+		</div> <!-- tab-box -->
+
+		<!-- 5th element: tabFrame to control parameters/details --><br />
+		<div class="plaintxt">
+			<p>Tetris - Based on JavaScript<br /><br />
+			Author: <a href="mailto:syfool@hotmail.com">syfool</a></p>
+		</div>
+	</div>
+
+  </div>
+
+ <div id="debugfrm" class="hide">
+  <p id="info"></p>
+  <p id="txt"></p>
+ </div>
+
+</body>
+</html>
