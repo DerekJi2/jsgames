@@ -107,16 +107,16 @@ function onMouseUp(top, left, obj)
 		for (var j = 0; j < g_piecesX; j++)
 			CELL[i][j] = 0;
 		
-	var targetP = {x:0, y:0};	// 对换图片的位置
+	var targetP = {x:0, y:0};	// Swap positions of pictures
 
-	// 鼠标的相对位置
+	// Abosolute position of the mouse pointer
 	var posx = window.event.clientX - getAbsolutePos(stageBody).x;
 	var posy = window.event.clientY - getAbsolutePos(stageBody).y;
 
 	targetP.x = Math.floor(posx/g_pieceWidth);
 	targetP.y = Math.floor(posy/g_pieceHeight);
 
-	// 对换数据
+	// Swap data
 	var curX = Math.floor(left/g_pieceWidth);
 	var	curY = Math.floor(top/g_pieceHeight);
 	var curPX =	IMAGE_PX[curY][curX];
@@ -134,7 +134,7 @@ function onMouseUp(top, left, obj)
 
 	reloadImage();
 
-	// 计算行走步数
+	// Count the steps
 	if (targetP.x != curX || targetP.y != curY)
 	{
 		steps.innerText = parseInt(steps.innerText) + 1;
@@ -157,7 +157,7 @@ function onMouseUp(top, left, obj)
 
 function passAndStop()
 {
-	// 停止计时
+	// stop & clear timer
 	if (g_TimerID > -1)
 	{
 		clearInterval(g_TimerID);
@@ -301,7 +301,7 @@ var g_TimerID = -1;
 var IMGNAME = "images/xiyangyang06.jpg";
 
 /**********************************************************
-	图片选择
+	Select an Image
 */
 function initImgSelect()
 {
@@ -326,20 +326,22 @@ function setImage()
 {
 	IMGNAME = imgSelect.value;
 	
-	// 重置游戏数据
+	// Reset data
 	steps.innerText = 0;
 	seconds.innerText = 0;
 
-	// 重新载入图片
+	// Reload the image
 	disorderImage();
 	reloadImage();
 
-	// 重新设置预览图片
+	// Reset the preview image
 	showPreviewImage();
+	
+	passAndStop();
 }
 
 /**********************************************************
-	图片预览
+	Preview Image
 */
 function initShowPrev()
 {
@@ -365,7 +367,7 @@ function showPreviewImage()
 }
 
 /**********************************************************
-	难度选择
+	Levels Selection
 */
 function initLevelSelect()
 {
@@ -390,16 +392,18 @@ function setLevel()
 
 	initGlobals();
 
-	// 重置游戏数据
+	// Reset data
 	steps.innerText = 0;
 	seconds.innerText = 0;
 
-	// 重新载入图片
+	// reload the image
 	disorderImage();
 	reloadImage();
 
-	// 重新设置预览图片
+	// reset the preview image
 	showPreviewImage();
+	
+	passAndStop();
 
 	debugInfo("g_piecesX = " + g_piecesX + " g_piecesY = " + g_piecesY);
 	debugInfo("g_pieceWidth = " + g_pieceWidth + " g_pieceHeight = " + g_pieceHeight);
@@ -416,7 +420,7 @@ function init()
 	initLevelSelect();
 	setLevel();
 	
-	// 重置游戏数据
+	// reset data
 	steps.innerText = 0;
 	seconds.innerText = 0;
 
